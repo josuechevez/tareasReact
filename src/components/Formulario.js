@@ -59,7 +59,7 @@ const Formulario = ({guardarNuevo_obj})=>{
             );
         }
 
-        //console.log('Respuesta',data);
+        console.log('Respuesta',data);
         reset_value();
     }
 
@@ -70,7 +70,7 @@ const Formulario = ({guardarNuevo_obj})=>{
 
     return(
          <form
-             className="border"
+             className="border w-100"
              onSubmit={get_value_form}
          >
              <div className="mb-3 pt-4 ps-3 pe-3">
@@ -89,7 +89,7 @@ const Formulario = ({guardarNuevo_obj})=>{
                  <label htmlFor="exampleFormControlTextarea1" className="form-label" row="15" >Description</label>
                  <textarea
                      className="form-control"
-                     rows="3"
+                     rows="10"
                      onChange={e => guardarDescription(e.target.value)}
                      value={description}
                  ></textarea>
